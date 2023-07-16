@@ -2,11 +2,9 @@
   padding: 20px;
   border-radius: 5px;
   color: rgb(2, 23, 43);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 15px 0px;
 }
 
 .Dictionary section {
-  background-color: aliceblue;
   padding: 30px;
   margin: 20px;
   border-radius: 5px;
@@ -15,6 +13,4 @@
 
 .Dictionary h2 {
   font-size: 28px;
-
-  opacity: 0.1px;
 }

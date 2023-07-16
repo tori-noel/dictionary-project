@@ -40,6 +40,7 @@ export default function Dictionary(props) {
               className="form-control"
               type="search"
               onChange={handlekKeywordChange}
+              defaultValue={props.defaultKeyword}
             />
           </form>
 
