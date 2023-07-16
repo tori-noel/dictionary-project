@@ -3,11 +3,14 @@
   border-radius: 5px;
   color: rgb(2, 23, 43);
 }
-
+.Dictionary section h2 {
+  color: #a67ce4;
+}
 .Dictionary section {
   padding: 30px;
   margin: 20px;
   border-radius: 5px;
+  background-color: #f7f8fa;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 15px 0px;
 }
 
