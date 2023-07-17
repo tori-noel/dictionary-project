@@ -8,7 +8,7 @@ function App() {
       <div className="container">
         <header>
           {" "}
-          <img src={logo} alt="logo" className="App-logo" />{" "}
+          <img src={logo} alt="logo" className="App-logo mt-5" />{" "}
         </header>
         <main>
           <Dictionary defaultKeyword="sunset" />

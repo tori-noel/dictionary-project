@@ -11,11 +11,24 @@ export default function Dictionary(props) {
     console.log(response.data);
     setResults(response.data);
   }
+  function handlePexelsResponse(response) {
+    console.log(response);
+  }
   function search() {
     let key = "43fa5d86069t4dbb87a934b227c8ob50";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${key}`;
     //documentation: https://www.shecodes.io/learn/apis/dictionary
     axios.get(apiUrl).then(handleResponse);
+
+    let pexelsApiKey =
+      "hRAT1yrOmcA1VHnv2f6p6fcCXHML02yvjoBm5gCRAGvKbuP1l2NMQt38";
+
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}`;
+    axios
+      .get(pexelsApiUrl, {
+        header: { Authorization: `Bearer ${pexelsApiKey}` },
+      })
+      .then(handlePexelsResponse);
   }
 
   function handleSubmit(event) {
@@ -34,7 +47,7 @@ export default function Dictionary(props) {
     return (
       <div className="Dictionary">
         <section>
-          <h2> What word do you want to search for?</h2>
+          <h2> What word would you like to search for?</h2>
           <form onSubmit={handleSubmit}>
             <input
               className="form-control"
